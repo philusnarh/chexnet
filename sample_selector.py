@@ -5,6 +5,8 @@ import random
 
 #### function to create a subsample from main dataset #######
 def dat_subsample(csvpath,sample_size=2000):
+	### return list of images that were selected, list of images not selected 
+	### the dataframe of image selected and the dataframe of images not selected
 	pneumonia = 8964
 	notpeunomia = 11500+8525
 	total_im = pneumonia+notpeunomia
